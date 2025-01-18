@@ -1,5 +1,7 @@
 package biblioteca;
 
+import java.util.Objects;
+
 public class LibroAutor {
     private int cod_libro;
     private int id_autor;
@@ -39,6 +41,25 @@ public class LibroAutor {
 	@Override
 	public String toString() {
 		return "LibroAutor [cod_libro=" + cod_libro + ", id_autor=" + id_autor + "]";
+	}
+
+	////////////////////hashCode and equals/////////////////////
+	@Override
+	public int hashCode() {
+		return Objects.hash(cod_libro, id_autor);
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		LibroAutor other = (LibroAutor) obj;
+		return cod_libro == other.cod_libro && id_autor == other.id_autor;
 	}
 
 	

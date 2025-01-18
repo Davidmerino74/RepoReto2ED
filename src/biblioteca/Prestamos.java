@@ -1,6 +1,7 @@
 package biblioteca;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class Prestamos {
     private int id_prestamo;
@@ -97,6 +98,23 @@ public class Prestamos {
 				+ ", n_max_prestado=" + n_max_prestado + ", fecha_prestamo=" + fecha_prestamo
 				+ ", fecha_limite_devolucion=" + fecha_limite_devolucion + ", fecha_efectiva_devolucion="
 				+ fecha_efectiva_devolucion + "]";
+	}
+	////////////////////hashCode and equals/////////////////////
+	@Override
+	public int hashCode() {
+		return Objects.hash(dni, id_prestamo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Prestamos other = (Prestamos) obj;
+		return Objects.equals(dni, other.dni) && id_prestamo == other.id_prestamo;
 	}
 	
 	

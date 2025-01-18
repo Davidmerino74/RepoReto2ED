@@ -1,6 +1,7 @@
 package biblioteca;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class Penalizaciones {
     private int id_penalizacion;
@@ -62,6 +63,26 @@ public class Penalizaciones {
 				+ ", dias_penalizacion=" + dias_penalizacion + ", fecha_inicio_penalizacion="
 				+ fecha_inicio_penalizacion + "]";
 	}
+
+	////////////////////hashCode and equals/////////////////////	
+	@Override
+	public int hashCode() {
+		return Objects.hash(id_penalizacion, id_prestamo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Penalizaciones other = (Penalizaciones) obj;
+		return id_penalizacion == other.id_penalizacion && id_prestamo == other.id_prestamo;
+	}
+
+	
 
 	
 	

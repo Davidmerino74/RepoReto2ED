@@ -1,5 +1,7 @@
 package biblioteca;
 
+import java.util.Objects;
+
 public class Personas {
     private String dni;
     private String nombre_completo;
@@ -106,8 +108,25 @@ public class Personas {
 				+ ", direccion=" + direccion + ", email=" + email + ", nombre_usuario=" + nombre_usuario
 				+ ", contrasena=" + contrasena + ", n_segsocial=" + n_segsocial + "]";
 	}
+	////////////////////hashCode and equals/////////////////////
+	@Override
+	public int hashCode() {
+		return Objects.hash(dni);
+	}
 
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Personas other = (Personas) obj;
+		return Objects.equals(dni, other.dni);
+	}
 
+	
 	
 }
 
