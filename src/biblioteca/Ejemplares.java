@@ -64,6 +64,12 @@ public class Ejemplares {
 	public void setDisponibilidad(String disponibilidad) {
 		this.disponibilidad = disponibilidad;
 	}
+	////////////////////toString/////////////////////
+	@Override
+	public String toString() {
+		return "Ejemplares [id_ejemplar=" + id_ejemplar + ", cod_libro=" + cod_libro + ", isbn=" + isbn + ", estado="
+				+ estado + ", disponibilidad=" + disponibilidad + "]";
+	}
 
 	
 	

@@ -34,6 +34,13 @@ public class LibroAutor {
 		this.id_autor = id_autor;
 	}
 
+	////////////////////toString/////////////////////
+
+	@Override
+	public String toString() {
+		return "LibroAutor [cod_libro=" + cod_libro + ", id_autor=" + id_autor + "]";
+	}
+
 	
 	
 }

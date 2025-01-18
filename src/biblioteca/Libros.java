@@ -42,6 +42,11 @@ public class Libros {
 
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
+	}
+	////////////////////toString/////////////////////
+	@Override
+	public String toString() {
+		return "Libros [cod_libro=" + cod_libro + ", titulo=" + titulo + ", isbn=" + isbn + "]";
 	}	
 
 	

@@ -99,6 +99,13 @@ public class Personas {
 	public void setN_segsocial(String n_segsocial) {
 		this.n_segsocial = n_segsocial;
 	}
+	////////////////////toString/////////////////////
+	@Override
+	public String toString() {
+		return "Personas [dni=" + dni + ", nombre_completo=" + nombre_completo + ", telefono=" + telefono
+				+ ", direccion=" + direccion + ", email=" + email + ", nombre_usuario=" + nombre_usuario
+				+ ", contrasena=" + contrasena + ", n_segsocial=" + n_segsocial + "]";
+	}
 
 
 	

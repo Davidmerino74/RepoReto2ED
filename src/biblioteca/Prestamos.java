@@ -90,6 +90,14 @@ public class Prestamos {
 	public void setFecha_efectiva_devolucion(Date fecha_efectiva_devolucion) {
 		this.fecha_efectiva_devolucion = fecha_efectiva_devolucion;
 	}
+	////////////////////toString/////////////////////
+	@Override
+	public String toString() {
+		return "Prestamos [id_prestamo=" + id_prestamo + ", id_ejemplar=" + id_ejemplar + ", dni=" + dni
+				+ ", n_max_prestado=" + n_max_prestado + ", fecha_prestamo=" + fecha_prestamo
+				+ ", fecha_limite_devolucion=" + fecha_limite_devolucion + ", fecha_efectiva_devolucion="
+				+ fecha_efectiva_devolucion + "]";
+	}
 	
 	
     

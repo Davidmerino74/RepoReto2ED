@@ -42,6 +42,11 @@ public class Autores {
 	public void setApellidos(String apellidos) {
 		this.apellidos = apellidos;
 	}
+	////////////////////toString/////////////////////
+	@Override
+	public String toString() {
+		return "Autores [id_autor=" + id_autor + ", nombre=" + nombre + ", apellidos=" + apellidos + "]";
+	}
 
 	
 	

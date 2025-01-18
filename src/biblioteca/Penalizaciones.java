@@ -55,6 +55,13 @@ public class Penalizaciones {
 	public void setFecha_inicio_penalizacion(Date fecha_inicio_penalizacion) {
 		this.fecha_inicio_penalizacion = fecha_inicio_penalizacion;
 	}
+	////////////////////toString/////////////////////
+	@Override
+	public String toString() {
+		return "Penalizaciones [id_penalizacion=" + id_penalizacion + ", id_prestamo=" + id_prestamo
+				+ ", dias_penalizacion=" + dias_penalizacion + ", fecha_inicio_penalizacion="
+				+ fecha_inicio_penalizacion + "]";
+	}
 
 	
 	
