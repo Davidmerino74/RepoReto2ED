@@ -126,7 +126,39 @@ public class Personas {
 		return Objects.equals(dni, other.dni);
 	}
 
+	////////////////////INICIALIZACIÓN DE DATOS/////////////////////
+	public static void main(String[] args) {
+	// Crear objetos Personas
+	Personas persona1 = new Personas("10123456Q", "Juanjo Lopez Menendez", "635702837", "barrio villa 18", "niko@hotmail.com", "niko", "456", "401234567897");
+	Personas persona2 = new Personas("20456789I", "Pepe Luis", "365402547", "calle jota 20", "triko@gmail.com", "triko", "251541dft", "406589741234");
+	Personas persona3 = new Personas("30789789P", "Jose Vidal Parro", "654321569", "calle del medio", "pepe@hotmail.com", "pepe2", "369jiuydd", "403265987452");
+	Personas persona4 = new Personas("40896789T", "Laura Perez Gomez", "635784901", "Calle Falsa 123", "laura@gmail.com", "laurapg", "secure123", "409876543210");
+	Personas persona5 = new Personas("50985647R", "Mario Castro Ruiz", "645987321", "Avenida Siempre Viva", "mario@yahoo.com", "mariocr", "123password", "408765432109");
+	Personas persona6 = new Personas("61234578Q", "Ana Lopez", "685749120", "Calle Luna 45", "ana@hotmail.com", "analopez", "mypass456", "507689432101");
+	Personas persona7 = new Personas("70956345W", "Luis Martinez", "625478963", "Paseo del Prado", "luis@gmail.com", "luism", "lu123456", "506781234509");
+	Personas persona8 = new Personas("80123457E", "Sofia Gutierrez", "697854321", "Calle Sol 99", "sofia@gmail.com", "sofiagt", "sofiapass", "607894563210");
+	Personas persona9 = new Personas("90765438Y", "Pablo Gonzalez", "657489012", "Avenida del Mar", "pablo@gmail.com", "pablog", "mypablo321", "706985123098");
+	Personas persona10 = new Personas("10234567U", "Marta Sanchez", "637490215", "Callejón del Gato", "marta@gmail.com", "martas", "martapass", "807894563210");
+	Personas persona11 = new Personas("20346789I", "Carlos Ruiz", "667840213", "Boulevard Norte", "carlos@hotmail.com", "carlosr", "carlos321", "908765432101");
+	Personas persona12 = new Personas("30457890P", "Lucia Garcia", "627489305", "Plaza Mayor", "lucia@gmail.com", "luciag", "lucia123", "109876543210");
+	Personas persona13 = new Personas("40568912K", "Jorge Ramirez", "617849023", "Calle Olivo", "jorge@gmail.com", "jorger", "jorgepass", "207689543210");
 	
+	// Imprimir datos para verificar
+	System.out.println(persona1);
+	System.out.println(persona2);
+	System.out.println(persona3);
+	System.out.println(persona4);
+	System.out.println(persona5);
+	System.out.println(persona6);
+	System.out.println(persona7);
+	System.out.println(persona8);
+	System.out.println(persona9);
+	System.out.println(persona10);
+	System.out.println(persona11);
+	System.out.println(persona12);
+	System.out.println(persona13);
+	}
+
 	
 }
 
