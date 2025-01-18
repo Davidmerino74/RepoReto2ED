@@ -1,0 +1,29 @@
+ ### java###
+
+#clases de Test
+*Test.java
+
+
+# clases compiladas
+#.class
+# Carpeta con binarios
+bin/
+
+# Archivos de log
+*.log
+
+#mobile tools for java (j2me)
+.mtj.tmp/
+
+#paquetes
+*.jar
+*.wat
+*.nar
+*.ear
+*.zig
+*.tar.gz
+*.rar
+
+
+# Emjemplo chorra
+NoSubirGit.docx
