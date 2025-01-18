@@ -8,7 +8,7 @@ public class Ejemplares {
     private String disponibilidad;
     
     ////////////////////CONSTRUCTORES/////////////////////
-	/** CONSTUCTOR COMPLETO
+	/** CONSTUCTOR COMPLETO					
 	 * @param id_ejemplar
 	 * @param cod_libro
 	 * @param isbn
@@ -23,7 +23,49 @@ public class Ejemplares {
 		this.estado = estado;
 		this.disponibilidad = disponibilidad;
 	}
+	////////////////////GETTERS AND SETTERS/////////////////////
 
-    
+	public int getId_ejemplar() {
+		return id_ejemplar;
+	}
+
+	public void setId_ejemplar(int id_ejemplar) {
+		this.id_ejemplar = id_ejemplar;
+	}
+
+	public int getCod_libro() {
+		return cod_libro;
+	}
+
+	public void setCod_libro(int cod_libro) {
+		this.cod_libro = cod_libro;
+	}
+
+	public String getIsbn() {
+		return isbn;
+	}
+
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+	public String getDisponibilidad() {
+		return disponibilidad;
+	}
+
+	public void setDisponibilidad(String disponibilidad) {
+		this.disponibilidad = disponibilidad;
+	}
+
+	
+	
 }
 
