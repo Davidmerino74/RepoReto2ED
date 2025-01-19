@@ -116,11 +116,48 @@ public class Penalizaciones {
 	System.out.println(penalizacion10);
 	System.out.println(penalizacion11);
 	System.out.println(penalizacion12);
+	}	
+	
+
+    //////////////////// MÉTODOS AÑADIDOS ////////////////////
+
+	/**
+	 * Calcula la fecha de fin de la penalización sumando los días de penalización 
+	 * a la fecha de inicio de la penalización.
+	 *
+	 * @return la fecha de fin de la penalización
+	 */
+	public LocalDate calcularFechaFinPenalizacion() {
+	    return fecha_inicio_penalizacion.plusDays(dias_penalizacion);
 	}
 
-	
+	/**
+	 * Verifica si la penalización está en curso basándose en la fecha actual 
+	 * y la fecha de fin de la penalización.
+	 *
+	 * @return true si la penalización está en curso, false en caso contrario
+	 */
+	public boolean estaPenalizacionEnCurso() {
+	    LocalDate fechaFinPenalizacion = calcularFechaFinPenalizacion();
+	    return LocalDate.now().isBefore(fechaFinPenalizacion) || LocalDate.now().isEqual(fechaFinPenalizacion);
+	}
 
-	
+	/**
+	 * Muestra información detallada de la penalización, incluyendo las fechas 
+	 * formateadas.
+	 *
+	 * @return una cadena de texto con los detalles de la penalización
+	 */
+	public String mostrarDetallesPenalizacion() {
+	    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+	    return "Penalización ID: " + id_penalizacion + "\n" +
+	           "Préstamo ID: " + id_prestamo + "\n" +
+	           "Días de penalización: " + dias_penalizacion + "\n" +
+	           "Fecha inicio penalización: " + fecha_inicio_penalizacion.format(formatter) + "\n" +
+	           "Fecha fin penalización: " + calcularFechaFinPenalizacion().format(formatter);
+	}
+
+
 	
 }
 

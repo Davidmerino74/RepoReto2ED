@@ -103,5 +103,15 @@ public class Libros {
 	System.out.println(libro13);
 	}
 
+    //////////////////// MÉTODOS AÑADIDOS ////////////////////
+	/**
+	 * Valida el formato del ISBN revisando que tiene 13 dígitos.
+	 *
+	 * @return true si el ISBN tiene un formato válido, false en caso contrario
+	 */
+	public boolean validarISBN() {
+	    return isbn.matches("\\d{13}");
+	}
+
 	
 }

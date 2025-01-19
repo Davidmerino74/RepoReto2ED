@@ -37,6 +37,25 @@ public class Prestamos {
 		this.fecha_limite_devolucion = fecha_limite_devolucion;
 		this.fecha_efectiva_devolucion = fecha_efectiva_devolucion;
 	}
+	/** CONSTUCTOR SIN FECHA_EFECTIVA_DEVOLUCION
+	 * @param id_prestamo
+	 * @param id_ejemplar
+	 * @param dni
+	 * @param n_max_prestado
+	 * @param fecha_prestamo
+	 * @param fecha_limite_devolucion
+	 */
+	public Prestamos(int id_prestamo, int id_ejemplar, String dni, int n_max_prestado, LocalDate fecha_prestamo,
+			LocalDate fecha_limite_devolucion) {
+		super();
+		this.id_prestamo = id_prestamo;
+		this.id_ejemplar = id_ejemplar;
+		this.dni = dni;
+		this.n_max_prestado = n_max_prestado;
+		this.fecha_prestamo = fecha_prestamo;
+		this.fecha_limite_devolucion = fecha_limite_devolucion;
+	}
+	
 	
 	////////////////////GETTERS AND SETTERS/////////////////////
 
@@ -161,6 +180,18 @@ public class Prestamos {
 	System.out.println(prestamo13);
 
 	}
+	
+    //////////////////// MÉTODOS AÑADIDOS ////////////////////
+	/**
+	 * Verifica si el préstamo está vencido.
+	 *
+	 * @return true si el préstamo está vencido, false en caso contrario
+	 */
+	public boolean estaPrestamoVencido() {
+	    return LocalDate.now().isAfter(fecha_limite_devolucion) && fecha_efectiva_devolucion == null;
+	}
+
+
 
     
 }

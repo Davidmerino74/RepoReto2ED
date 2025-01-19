@@ -35,6 +35,27 @@ public class Personas {
 		this.contrasena = contrasena;
 		this.n_segsocial = n_segsocial;
 	}
+	/** CONSTUCTOR PARA USUARIOS SIN NÚMERO SEGURIDAD SOCIAL
+	 * @param dni
+	 * @param nombre_completo
+	 * @param telefono
+	 * @param direccion
+	 * @param email
+	 * @param nombre_usuario
+	 * @param contrasena
+	 */
+	public Personas(String dni, String nombre_completo, String telefono, String direccion, String email,
+	        String nombre_usuario, String contrasena) {
+	    super();
+	    this.dni = dni;
+	    this.nombre_completo = nombre_completo;
+	    this.telefono = telefono;
+	    this.direccion = direccion;
+	    this.email = email;
+	    this.nombre_usuario = nombre_usuario;
+	    this.contrasena = contrasena;
+	}
+
 	
 	////////////////////GETTERS AND SETTERS/////////////////////
 
@@ -158,6 +179,24 @@ public class Personas {
 	System.out.println(persona12);
 	System.out.println(persona13);
 	}
+    //////////////////// MÉTODOS AÑADIDOS ////////////////////
+	/**
+	 * Valida el formato del email de la persona.
+	 *
+	 * @return true si el formato del email es válido, false en caso contrario
+	 */
+	public boolean validarFormatoEmail() {
+	    return email.matches("^[A-Za-z0-9+_.-]+@(.+)$");
+	}
+	/**
+	 * Verifica si el número de teléfono tiene un formato válido.
+	 *
+	 * @return true si el número de teléfono es válido, false en caso contrario
+	 */
+	public boolean validarTelefono() {
+	    return telefono.matches("\\d{9}");
+	}
+
 
 	
 }

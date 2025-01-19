@@ -101,7 +101,26 @@ public class Autores {
 	System.out.println(autor12);
 	System.out.println(autor13);
 	}
+    //////////////////// MÉTODOS AÑADIDOS ////////////////////
+	/**
+	 * Obtiene el nombre completo del autor.
+	 *
+	 * @return una cadena de texto con el nombre completo del autor
+	 */
+	public String obtenerNombreCompleto() {
+	    return nombre + " " + apellidos;
+	}
+	/**
+	 * Verifica si el nombre o los apellidos del autor contienen una palabra específica.
+	 *
+	 * @param palabra la palabra a buscar
+	 * @return true si la palabra está contenida en el nombre completo, false en caso contrario
+	 */
+	public boolean contienePalabra(String palabra) {
+	    return obtenerNombreCompleto().contains(palabra);
+	}
 
+	
 
 	
 }

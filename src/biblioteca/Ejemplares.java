@@ -123,6 +123,18 @@ public class Ejemplares {
 	System.out.println(ejemplar13);
 	}
 
+    //////////////////// MÉTODOS AÑADIDOS ////////////////////
+	
+	/**
+	 * Comprueba si el ejemplar está disponible y en buen estado.
+	 *
+	 * @return true si el ejemplar está disponible y en buen estado, false en caso contrario.
+	 */
+	public boolean esEjemplarDisponibleYBueno() {
+	    return this.disponibilidad.equals("si") && this.estado.equals("bueno");
+	}
+
+
 	
 	
 	
