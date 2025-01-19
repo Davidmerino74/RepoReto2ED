@@ -61,6 +61,29 @@ public class AutorInternacional extends Autores {
 			return "Idioma desconocido";
 		}
 	}
+	public static void main(String[] args) {
+    //////////////////// INICIALIZACIÓN DE DATOS ///////////////////////
+
+        // Crear Objetos Autores Internacionales
+        AutorInternacional autor6 = new AutorInternacional(6, "George", "Orwell", "Reino Unido");
+        AutorInternacional autor7 = new AutorInternacional(7, "Haruki", "Murakami", "Japón");
+        AutorInternacional autor8 = new AutorInternacional(8, "Antoine", "de Saint-Exupéry", "Francia");
+        AutorInternacional autor9 = new AutorInternacional(9, "Hermann", "Hesse", "Alemania");
+        AutorInternacional autor10 = new AutorInternacional(10, "Ernest", "Hemingway", "Estados Unidos");
+
+        // Imprimir datos para verificar
+        System.out.println("Autores Internacionales:");
+        System.out.println(autor6);
+        System.out.println(autor7);
+        System.out.println(autor8);
+        System.out.println(autor9);
+        System.out.println(autor10);
+
+        //////////////////// PRUEBAS DE MÉTODOS para verificar ///////////////////////
+        System.out.println("\nPruebas de métodos de AutorInternacional:");
+        System.out.println(autor8.idiomaPrincipal());
+    }
+	
 
 }
 
