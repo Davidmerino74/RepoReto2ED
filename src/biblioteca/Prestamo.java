@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * 
  */
-public class Prestamos {
+public class Prestamo {
 	private int id_prestamo;
 	private int id_ejemplar;
 	private String dni;
@@ -28,7 +28,7 @@ public class Prestamos {
 	 * @param fecha_limite_devolucion
 	 * @param fecha_efectiva_devolucion
 	 */
-	public Prestamos(int id_prestamo, int id_ejemplar, String dni, int n_max_prestado, LocalDate fecha_prestamo,
+	public Prestamo(int id_prestamo, int id_ejemplar, String dni, int n_max_prestado, LocalDate fecha_prestamo,
 			LocalDate fecha_limite_devolucion, LocalDate fecha_efectiva_devolucion) {
 		super();
 		this.id_prestamo = id_prestamo;
@@ -50,7 +50,7 @@ public class Prestamos {
 	 * @param fecha_prestamo
 	 * @param fecha_limite_devolucion
 	 */
-	public Prestamos(int id_prestamo, int id_ejemplar, String dni, int n_max_prestado, LocalDate fecha_prestamo,
+	public Prestamo(int id_prestamo, int id_ejemplar, String dni, int n_max_prestado, LocalDate fecha_prestamo,
 			LocalDate fecha_limite_devolucion) {
 		super();
 		this.id_prestamo = id_prestamo;
@@ -144,7 +144,7 @@ public class Prestamos {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Prestamos other = (Prestamos) obj;
+		Prestamo other = (Prestamo) obj;
 		return Objects.equals(dni, other.dni) && id_prestamo == other.id_prestamo;
 	}
 
@@ -152,31 +152,31 @@ public class Prestamos {
 	public static void main(String[] args) {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		// Crear objetos Prestamos
-		Prestamos prestamo1 = new Prestamos(10101, 12345, "10123456Q", 1, LocalDate.parse("10/10/2024", formatter),
+		Prestamo prestamo1 = new Prestamo(10101, 12345, "10123456Q", 1, LocalDate.parse("10/10/2024", formatter),
 				LocalDate.parse("25/10/2024", formatter), LocalDate.parse("24/10/2024", formatter));
-		Prestamos prestamo2 = new Prestamos(10102, 23456, "20456789I", 3, LocalDate.parse("12/10/2024", formatter),
+		Prestamo prestamo2 = new Prestamo(10102, 23456, "20456789I", 3, LocalDate.parse("12/10/2024", formatter),
 				LocalDate.parse("27/10/2024", formatter), LocalDate.parse("30/10/2024", formatter));
-		Prestamos prestamo3 = new Prestamos(10103, 34567, "30789789P", 2, LocalDate.parse("14/10/2024", formatter),
+		Prestamo prestamo3 = new Prestamo(10103, 34567, "30789789P", 2, LocalDate.parse("14/10/2024", formatter),
 				LocalDate.parse("29/10/2024", formatter), LocalDate.parse("30/10/2024", formatter));
-		Prestamos prestamo4 = new Prestamos(10104, 45678, "40896789T", 2, LocalDate.parse("10/11/2024", formatter),
+		Prestamo prestamo4 = new Prestamo(10104, 45678, "40896789T", 2, LocalDate.parse("10/11/2024", formatter),
 				LocalDate.parse("25/11/2024", formatter), LocalDate.parse("24/11/2024", formatter));
-		Prestamos prestamo5 = new Prestamos(10105, 56789, "50985647R", 1, LocalDate.parse("11/11/2024", formatter),
+		Prestamo prestamo5 = new Prestamo(10105, 56789, "50985647R", 1, LocalDate.parse("11/11/2024", formatter),
 				LocalDate.parse("26/11/2024", formatter), null);
-		Prestamos prestamo6 = new Prestamos(10106, 67890, "61234578Q", 3, LocalDate.parse("12/11/2024", formatter),
+		Prestamo prestamo6 = new Prestamo(10106, 67890, "61234578Q", 3, LocalDate.parse("12/11/2024", formatter),
 				LocalDate.parse("27/11/2024", formatter), LocalDate.parse("28/11/2024", formatter));
-		Prestamos prestamo7 = new Prestamos(10107, 78901, "70956345W", 2, LocalDate.parse("13/11/2024", formatter),
+		Prestamo prestamo7 = new Prestamo(10107, 78901, "70956345W", 2, LocalDate.parse("13/11/2024", formatter),
 				LocalDate.parse("28/11/2024", formatter), LocalDate.parse("29/11/2024", formatter));
-		Prestamos prestamo8 = new Prestamos(10108, 89012, "80123457E", 3, LocalDate.parse("14/11/2024", formatter),
+		Prestamo prestamo8 = new Prestamo(10108, 89012, "80123457E", 3, LocalDate.parse("14/11/2024", formatter),
 				LocalDate.parse("29/11/2024", formatter), null);
-		Prestamos prestamo9 = new Prestamos(10109, 90123, "90765438Y", 1, LocalDate.parse("15/11/2024", formatter),
+		Prestamo prestamo9 = new Prestamo(10109, 90123, "90765438Y", 1, LocalDate.parse("15/11/2024", formatter),
 				LocalDate.parse("30/11/2024", formatter), LocalDate.parse("01/12/2024", formatter));
-		Prestamos prestamo10 = new Prestamos(10110, 12346, "10234567U", 2, LocalDate.parse("16/11/2024", formatter),
+		Prestamo prestamo10 = new Prestamo(10110, 12346, "10234567U", 2, LocalDate.parse("16/11/2024", formatter),
 				LocalDate.parse("01/12/2024", formatter), null);
-		Prestamos prestamo11 = new Prestamos(10111, 23457, "20346789I", 3, LocalDate.parse("17/11/2024", formatter),
+		Prestamo prestamo11 = new Prestamo(10111, 23457, "20346789I", 3, LocalDate.parse("17/11/2024", formatter),
 				LocalDate.parse("02/12/2024", formatter), LocalDate.parse("03/12/2024", formatter));
-		Prestamos prestamo12 = new Prestamos(10112, 34568, "30457890P", 1, LocalDate.parse("18/11/2024", formatter),
+		Prestamo prestamo12 = new Prestamo(10112, 34568, "30457890P", 1, LocalDate.parse("18/11/2024", formatter),
 				LocalDate.parse("03/12/2024", formatter), LocalDate.parse("04/12/2024", formatter));
-		Prestamos prestamo13 = new Prestamos(10113, 45679, "40568912K", 2, LocalDate.parse("19/11/2024", formatter),
+		Prestamo prestamo13 = new Prestamo(10113, 45679, "40568912K", 2, LocalDate.parse("19/11/2024", formatter),
 				LocalDate.parse("04/12/2024", formatter), null);
 
 		// Imprimir datos para verificar

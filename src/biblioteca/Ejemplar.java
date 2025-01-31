@@ -2,7 +2,7 @@ package biblioteca;
 
 import java.util.Objects;
 
-public class Ejemplares {
+public class Ejemplar {
 	private int id_ejemplar;
 	private int cod_libro;
 	private String isbn;
@@ -19,7 +19,7 @@ public class Ejemplares {
 	 * @param estado
 	 * @param disponibilidad
 	 */
-	public Ejemplares(int id_ejemplar, int cod_libro, String isbn, String estado, String disponibilidad) {
+	public Ejemplar(int id_ejemplar, int cod_libro, String isbn, String estado, String disponibilidad) {
 		super();
 		this.id_ejemplar = id_ejemplar;
 		this.cod_libro = cod_libro;
@@ -90,26 +90,26 @@ public class Ejemplares {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Ejemplares other = (Ejemplares) obj;
+		Ejemplar other = (Ejemplar) obj;
 		return cod_libro == other.cod_libro && id_ejemplar == other.id_ejemplar && Objects.equals(isbn, other.isbn);
 	}
 
 	//////////////////// INICIALIZACIÓN DE DATOS/////////////////////
 	public static void main(String[] args) {
 		// Crear objetos Ejemplares
-		Ejemplares ejemplar1 = new Ejemplares(12345, 1, "1234567891234", "bueno", "si");
-		Ejemplares ejemplar2 = new Ejemplares(23456, 2, "2345678912345", "malo", "si");
-		Ejemplares ejemplar3 = new Ejemplares(34567, 3, "4567891234567", "bueno", "si");
-		Ejemplares ejemplar4 = new Ejemplares(45678, 4, "9780143106798", "bueno", "si");
-		Ejemplares ejemplar5 = new Ejemplares(56789, 5, "9780451524935", "malo", "no");
-		Ejemplares ejemplar6 = new Ejemplares(67890, 6, "9781400034710", "bueno", "si");
-		Ejemplares ejemplar7 = new Ejemplares(78901, 7, "9780375704024", "bueno", "no");
-		Ejemplares ejemplar8 = new Ejemplares(89012, 8, "9781400079278", "malo", "si");
-		Ejemplares ejemplar9 = new Ejemplares(90123, 9, "9780451526342", "bueno", "si");
-		Ejemplares ejemplar10 = new Ejemplares(12346, 10, "9788466351988", "bueno", "no");
-		Ejemplares ejemplar11 = new Ejemplares(23457, 11, "9780060934347", "bueno", "si");
-		Ejemplares ejemplar12 = new Ejemplares(34568, 12, "9780156012195", "malo", "si");
-		Ejemplares ejemplar13 = new Ejemplares(45679, 13, "9780307389732", "bueno", "si");
+		Ejemplar ejemplar1 = new Ejemplar(12345, 1, "1234567891234", "bueno", "si");
+		Ejemplar ejemplar2 = new Ejemplar(23456, 2, "2345678912345", "malo", "si");
+		Ejemplar ejemplar3 = new Ejemplar(34567, 3, "4567891234567", "bueno", "si");
+		Ejemplar ejemplar4 = new Ejemplar(45678, 4, "9780143106798", "bueno", "si");
+		Ejemplar ejemplar5 = new Ejemplar(56789, 5, "9780451524935", "malo", "no");
+		Ejemplar ejemplar6 = new Ejemplar(67890, 6, "9781400034710", "bueno", "si");
+		Ejemplar ejemplar7 = new Ejemplar(78901, 7, "9780375704024", "bueno", "no");
+		Ejemplar ejemplar8 = new Ejemplar(89012, 8, "9781400079278", "malo", "si");
+		Ejemplar ejemplar9 = new Ejemplar(90123, 9, "9780451526342", "bueno", "si");
+		Ejemplar ejemplar10 = new Ejemplar(12346, 10, "9788466351988", "bueno", "no");
+		Ejemplar ejemplar11 = new Ejemplar(23457, 11, "9780060934347", "bueno", "si");
+		Ejemplar ejemplar12 = new Ejemplar(34568, 12, "9780156012195", "malo", "si");
+		Ejemplar ejemplar13 = new Ejemplar(45679, 13, "9780307389732", "bueno", "si");
 
 		// Imprimir datos para verificar
 		System.out.println(ejemplar1);

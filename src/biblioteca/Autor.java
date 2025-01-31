@@ -2,7 +2,7 @@ package biblioteca;
 
 import java.util.Objects;
 
-public abstract class Autores {
+public abstract class Autor {
 	private int id_autor;
 	private String nombre;
 	private String apellidos;
@@ -15,7 +15,7 @@ public abstract class Autores {
 	 * @param nombre
 	 * @param apellidos
 	 */
-	public Autores(int id_autor, String nombre, String apellidos) {
+	public Autor(int id_autor, String nombre, String apellidos) {
 		this.id_autor = id_autor;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
@@ -67,7 +67,7 @@ public abstract class Autores {
 			return true;
 		if (obj == null || getClass() != obj.getClass())
 			return false;
-		Autores other = (Autores) obj;
+		Autor other = (Autor) obj;
 		return id_autor == other.id_autor && Objects.equals(nombre, other.nombre)
 				&& Objects.equals(apellidos, other.apellidos);
 	}

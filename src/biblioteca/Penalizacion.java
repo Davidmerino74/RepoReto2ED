@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
-public class Penalizaciones {
+public class Penalizacion {
 	private int id_penalizacion;
 	private int id_prestamo;
 	private int dias_penalizacion;
@@ -19,7 +19,7 @@ public class Penalizaciones {
 	 * @param dias_penalizacion
 	 * @param fecha_inicio_penalizacion
 	 */
-	public Penalizaciones(int id_penalizacion, int id_prestamo, int dias_penalizacion,
+	public Penalizacion(int id_penalizacion, int id_prestamo, int dias_penalizacion,
 			LocalDate fecha_inicio_penalizacion) {
 		super();
 		this.id_penalizacion = id_penalizacion;
@@ -84,7 +84,7 @@ public class Penalizaciones {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Penalizaciones other = (Penalizaciones) obj;
+		Penalizacion other = (Penalizacion) obj;
 		return id_penalizacion == other.id_penalizacion && id_prestamo == other.id_prestamo;
 	}
 
@@ -93,18 +93,18 @@ public class Penalizaciones {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
 		// Crear objetos Penalizaciones
-		Penalizaciones penalizacion1 = new Penalizaciones(11111, 10102, 15, LocalDate.parse("30/10/2024", formatter));
-		Penalizaciones penalizacion2 = new Penalizaciones(11112, 10103, 15, LocalDate.parse("30/10/2024", formatter));
-		Penalizaciones penalizacion3 = new Penalizaciones(11113, 10105, 10, LocalDate.parse("05/12/2024", formatter));
-		Penalizaciones penalizacion4 = new Penalizaciones(11114, 10108, 15, LocalDate.parse("05/12/2024", formatter));
-		Penalizaciones penalizacion5 = new Penalizaciones(11115, 10110, 20, LocalDate.parse("05/12/2024", formatter));
-		Penalizaciones penalizacion6 = new Penalizaciones(11116, 10112, 25, LocalDate.parse("06/12/2024", formatter));
-		Penalizaciones penalizacion7 = new Penalizaciones(11117, 10113, 15, LocalDate.parse("07/12/2024", formatter));
-		Penalizaciones penalizacion8 = new Penalizaciones(11118, 10104, 5, LocalDate.parse("08/12/2024", formatter));
-		Penalizaciones penalizacion9 = new Penalizaciones(11119, 10109, 10, LocalDate.parse("09/12/2024", formatter));
-		Penalizaciones penalizacion10 = new Penalizaciones(11120, 10107, 30, LocalDate.parse("10/12/2024", formatter));
-		Penalizaciones penalizacion11 = new Penalizaciones(11121, 10106, 15, LocalDate.parse("11/12/2024", formatter));
-		Penalizaciones penalizacion12 = new Penalizaciones(11122, 10111, 10, LocalDate.parse("12/12/2024", formatter));
+		Penalizacion penalizacion1 = new Penalizacion(11111, 10102, 15, LocalDate.parse("30/10/2024", formatter));
+		Penalizacion penalizacion2 = new Penalizacion(11112, 10103, 15, LocalDate.parse("30/10/2024", formatter));
+		Penalizacion penalizacion3 = new Penalizacion(11113, 10105, 10, LocalDate.parse("05/12/2024", formatter));
+		Penalizacion penalizacion4 = new Penalizacion(11114, 10108, 15, LocalDate.parse("05/12/2024", formatter));
+		Penalizacion penalizacion5 = new Penalizacion(11115, 10110, 20, LocalDate.parse("05/12/2024", formatter));
+		Penalizacion penalizacion6 = new Penalizacion(11116, 10112, 25, LocalDate.parse("06/12/2024", formatter));
+		Penalizacion penalizacion7 = new Penalizacion(11117, 10113, 15, LocalDate.parse("07/12/2024", formatter));
+		Penalizacion penalizacion8 = new Penalizacion(11118, 10104, 5, LocalDate.parse("08/12/2024", formatter));
+		Penalizacion penalizacion9 = new Penalizacion(11119, 10109, 10, LocalDate.parse("09/12/2024", formatter));
+		Penalizacion penalizacion10 = new Penalizacion(11120, 10107, 30, LocalDate.parse("10/12/2024", formatter));
+		Penalizacion penalizacion11 = new Penalizacion(11121, 10106, 15, LocalDate.parse("11/12/2024", formatter));
+		Penalizacion penalizacion12 = new Penalizacion(11122, 10111, 10, LocalDate.parse("12/12/2024", formatter));
 
 		// Imprimir datos para verificar
 		System.out.println(penalizacion1);

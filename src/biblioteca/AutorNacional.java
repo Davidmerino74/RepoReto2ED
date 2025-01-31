@@ -1,6 +1,6 @@
 package biblioteca;
 
-public class AutorNacional extends Autores {
+public class AutorNacional extends Autor {
 	private String region;
 
 	//////////////////// CONSTRUCTORES ///////////////////////

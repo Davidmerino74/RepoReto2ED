@@ -2,7 +2,7 @@ package biblioteca;
 
 import java.util.Objects;
 
-public class Libros {
+public class Libro {
 	private int cod_libro;
 	private String titulo;
 	private String isbn;
@@ -15,7 +15,7 @@ public class Libros {
 	 * @param titulo
 	 * @param isbn
 	 */
-	public Libros(int cod_libro, String titulo, String isbn) {
+	public Libro(int cod_libro, String titulo, String isbn) {
 		super();
 		this.cod_libro = cod_libro;
 		this.titulo = titulo;
@@ -69,26 +69,26 @@ public class Libros {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Libros other = (Libros) obj;
+		Libro other = (Libro) obj;
 		return cod_libro == other.cod_libro && Objects.equals(isbn, other.isbn) && Objects.equals(titulo, other.titulo);
 	}
 
 	//////////////////// INICIALIZACIÓN DE DATOS/////////////////////
 	public static void main(String[] args) {
 		// Crear objetos Libros
-		Libros libro1 = new Libros(1, "El señor de los anillos", "1231231231231");
-		Libros libro2 = new Libros(2, "El viejo y el mar", "4564564564564");
-		Libros libro3 = new Libros(3, "Mi caballo blanco", "7897897897897");
-		Libros libro4 = new Libros(4, "Cien años de soledad", "9780143106798");
-		Libros libro5 = new Libros(5, "1984", "9780451524935");
-		Libros libro6 = new Libros(6, "Crónica de una muerte anunciada", "9781400034710");
-		Libros libro7 = new Libros(7, "Norwegian Wood", "9780375704024");
-		Libros libro8 = new Libros(8, "Kafka en la orilla", "9781400079278");
-		Libros libro9 = new Libros(9, "Rebelión en la granja", "9780451526342");
-		Libros libro10 = new Libros(10, "Rayuela", "9788466351988");
-		Libros libro11 = new Libros(11, "Don Quijote de la Mancha", "9780060934347");
-		Libros libro12 = new Libros(12, "El principito", "9780156012195");
-		Libros libro13 = new Libros(13, "El amor en los tiempos del cólera", "9780307389732");
+		Libro libro1 = new Libro(1, "El señor de los anillos", "1231231231231");
+		Libro libro2 = new Libro(2, "El viejo y el mar", "4564564564564");
+		Libro libro3 = new Libro(3, "Mi caballo blanco", "7897897897897");
+		Libro libro4 = new Libro(4, "Cien años de soledad", "9780143106798");
+		Libro libro5 = new Libro(5, "1984", "9780451524935");
+		Libro libro6 = new Libro(6, "Crónica de una muerte anunciada", "9781400034710");
+		Libro libro7 = new Libro(7, "Norwegian Wood", "9780375704024");
+		Libro libro8 = new Libro(8, "Kafka en la orilla", "9781400079278");
+		Libro libro9 = new Libro(9, "Rebelión en la granja", "9780451526342");
+		Libro libro10 = new Libro(10, "Rayuela", "9788466351988");
+		Libro libro11 = new Libro(11, "Don Quijote de la Mancha", "9780060934347");
+		Libro libro12 = new Libro(12, "El principito", "9780156012195");
+		Libro libro13 = new Libro(13, "El amor en los tiempos del cólera", "9780307389732");
 
 		// Imprimir datos para verificar
 		System.out.println(libro1);
